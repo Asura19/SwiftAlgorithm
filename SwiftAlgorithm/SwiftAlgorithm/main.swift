@@ -21,3 +21,6 @@ Others.shared.printPyramid(9)
 print("twoSum result = " + LeetCode.shared.twoSum(array, 8).description)
 
 print(LeetCode.shared.thirdMax(array))
+
+print(ListNode.print(LeetCode.shared.addTwoNumbers(ListNode.getList([2, 4, 3]),
+                                                   ListNode.getList([8, 2, 9]))))
