@@ -10,9 +10,7 @@ import Cocoa
 
 open class Others: NSObject {
     
-    static let shared = Others()
-    
-    func printPyramid(_ m: Int) {
+    open static func printPyramid(_ m: Int) {
         var n = m
         if n > 9 {
             n = 10

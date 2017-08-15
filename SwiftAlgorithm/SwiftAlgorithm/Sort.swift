@@ -10,9 +10,7 @@ import Cocoa
 
 open class Sort: NSObject {
     
-    static let shared = Sort()
-    
-    open func bubble(_ array: Array<Int>) -> [Int] {
+    open static func bubble(_ array: Array<Int>) -> [Int] {
         var a = array
         
         let count = a.count
@@ -30,7 +28,7 @@ open class Sort: NSObject {
     }
     
     
-    open func quick(_ array: [Int], _ left: Int, _ right: Int) -> [Int] {
+    open static func quick(_ array: [Int], _ left: Int, _ right: Int) -> [Int] {
         var a = array
         
         if a.count <= 1 {

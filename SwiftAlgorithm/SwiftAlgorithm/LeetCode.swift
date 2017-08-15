@@ -50,11 +50,9 @@ public class ListNode {
 
 open class LeetCode: NSObject {
     
-    static let shared = LeetCode()
-    
     
     // LeetCode 1: https://leetcode.com/problems/two-sum/description/
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    open static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         if nums.count < 2 {
             return []
         }
@@ -74,7 +72,7 @@ open class LeetCode: NSObject {
     
     
     // LeetCode 2: https://leetcode.com/problems/add-two-numbers/description/
-    func addTwoNumbers(_ node1: ListNode?, _ node2: ListNode?) -> ListNode? {
+    open static func addTwoNumbers(_ node1: ListNode?, _ node2: ListNode?) -> ListNode? {
         var temp1: ListNode? = node1
         var temp2: ListNode? = node2
         let headNode: ListNode? = ListNode(0)
@@ -113,7 +111,7 @@ open class LeetCode: NSObject {
     
     
     // LeetCode 3 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-    func lengthOfLongestSubstring(_ s: String) -> Int {
+    open static func lengthOfLongestSubstring(_ s: String) -> Int {
         let charArray = Array(s.characters)
         let length = charArray.count
         if length <= 1 {
@@ -146,7 +144,7 @@ open class LeetCode: NSObject {
     
     
     // LeetCode 414 https://leetcode.com/problems/third-maximum-number/description/
-    func thirdMax(_ nums: [Int]) -> Int {
+    open static func thirdMax(_ nums: [Int]) -> Int {
         if nums.count == 1 {
             return nums.first!
         }
