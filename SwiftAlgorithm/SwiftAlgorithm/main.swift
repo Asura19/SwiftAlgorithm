@@ -10,7 +10,7 @@ import Foundation
 
 var array = [6, 5, 1, 3, 8, 4, 7, 9, 2, 0, 11, 34, 7]
 
-//var resultArray: [Int]
+var resultArray: [Int]
 
 print("bubble sort result = " + Sort.shared.bubble(array).description)
 
@@ -24,3 +24,5 @@ print(LeetCode.shared.thirdMax(array))
 
 print(ListNode.print(LeetCode.shared.addTwoNumbers(ListNode.getList([2, 4, 3]),
                                                    ListNode.getList([8, 2, 9]))))
+
+print(LeetCode.shared.lengthOfLongestSubstring("assedfeeedfsdjfklm"))

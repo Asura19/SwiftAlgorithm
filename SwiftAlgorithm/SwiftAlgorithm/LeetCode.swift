@@ -112,6 +112,39 @@ open class LeetCode: NSObject {
     
     
     
+    // LeetCode 3 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        let charArray = Array(s.characters)
+        let length = charArray.count
+        if length <= 1 {
+            return length
+        }
+        var hashMap = Dictionary<Character, Int>()
+        var maxLength = 1
+        var tempMax = 1
+        hashMap[charArray[0]] = 0
+        for i in 1...length - 1 {
+            if let lastPosition = hashMap[charArray[i]] {
+                if tempMax + lastPosition < i {
+                    tempMax += 1
+                }
+                else {
+                    tempMax = i - lastPosition
+                }
+            }
+            else {
+                tempMax += 1
+            }
+            hashMap[charArray[i]] = i
+            if tempMax > maxLength {
+                maxLength = tempMax
+            }
+        }
+        return maxLength
+    }
+    
+    
+    
     // LeetCode 414 https://leetcode.com/problems/third-maximum-number/description/
     func thirdMax(_ nums: [Int]) -> Int {
         if nums.count == 1 {
@@ -148,4 +181,7 @@ open class LeetCode: NSObject {
         }
         return third == Int.min ? first : third
     }
+    
+    
+    
 }
