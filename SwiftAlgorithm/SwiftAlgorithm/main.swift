@@ -26,3 +26,7 @@ print(ListNode.print(LeetCode.addTwoNumbers(ListNode.getList([2, 4, 3]),
                                                    ListNode.getList([8, 2, 9]))))
 
 print(LeetCode.lengthOfLongestSubstring("assedfeeedfsdjfklm"))
+
+print(LeetCode.reverse(8223372036854775889))
+
+
