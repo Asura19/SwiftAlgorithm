@@ -16,13 +16,18 @@ extension LeetCode {
             return 0
         }
         
-        var j = 1
-        for (i, element) in nums.enumerated() {
-            if i == nums.count - 1 { break }
-            if element != nums[i + 1] {
+        var j = 0
+        for element in nums {
+            if j == nums.count - 1 {
+                break
+            }
+            if element != nums[j + 1] {
                 j = j + 1
             }
+            else {
+                nums.remove(at: j + 1)
+            }
         }
-        return j
+        return j + 1
     }
 }
