@@ -11,7 +11,7 @@ import Foundation
 extension LeetCode {
     
     // LeetCode 2: https://leetcode.com/problems/add-two-numbers/description/
-    open static func addTwoNumbers(_ node1: ListNode?, _ node2: ListNode?) -> ListNode? {
+    public static func addTwoNumbers(_ node1: ListNode?, _ node2: ListNode?) -> ListNode? {
         var temp1: ListNode? = node1
         var temp2: ListNode? = node2
         let headNode: ListNode? = ListNode(0)

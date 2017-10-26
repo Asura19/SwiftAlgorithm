@@ -11,7 +11,7 @@ import Foundation
 extension LeetCode {
     
     // LeetCode 3 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-    open static func lengthOfLongestSubstring(_ s: String) -> Int {
+    public static func lengthOfLongestSubstring(_ s: String) -> Int {
         let charArray = Array(s.characters)
         let length = charArray.count
         if length <= 1 {

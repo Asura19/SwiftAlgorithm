@@ -19,6 +19,7 @@
 		D0C0D1551F44558B005DBDA4 /* LeetCode414.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D1541F44558B005DBDA4 /* LeetCode414.swift */; };
 		D0C0D1571F4455D4005DBDA4 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D1561F4455D4005DBDA4 /* ListNode.swift */; };
 		D0C0D1591F44560E005DBDA4 /* LeetCode007.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D1581F44560E005DBDA4 /* LeetCode007.swift */; };
+		D0C9D34B1FA1C78A0044F524 /* LeetCode026.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9D34A1FA1C78A0044F524 /* LeetCode026.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		D0C0D1541F44558B005DBDA4 /* LeetCode414.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode414.swift; sourceTree = "<group>"; };
 		D0C0D1561F4455D4005DBDA4 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		D0C0D1581F44560E005DBDA4 /* LeetCode007.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode007.swift; sourceTree = "<group>"; };
+		D0C9D34A1FA1C78A0044F524 /* LeetCode026.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode026.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				D0C0D1501F445520005DBDA4 /* LeetCode002.swift */,
 				D0C0D1521F445567005DBDA4 /* LeetCode003.swift */,
 				D0C0D1581F44560E005DBDA4 /* LeetCode007.swift */,
+				D0C9D34A1FA1C78A0044F524 /* LeetCode026.swift */,
 				D0C0D1541F44558B005DBDA4 /* LeetCode414.swift */,
 			);
 			name = LeetCode;
@@ -180,6 +183,7 @@
 				D0C0D14A1F44542E005DBDA4 /* Quick.swift in Sources */,
 				D07088951F44535C009FB8FB /* Bubble.swift in Sources */,
 				D0C0D1511F445520005DBDA4 /* LeetCode002.swift in Sources */,
+				D0C9D34B1FA1C78A0044F524 /* LeetCode026.swift in Sources */,
 				D0C0D1591F44560E005DBDA4 /* LeetCode007.swift in Sources */,
 				D0C0D1531F445567005DBDA4 /* LeetCode003.swift in Sources */,
 				D08920101F413B4C006BE533 /* Sort.swift in Sources */,

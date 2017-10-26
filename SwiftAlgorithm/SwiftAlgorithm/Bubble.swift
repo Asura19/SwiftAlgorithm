@@ -10,7 +10,7 @@ import Foundation
 
 extension Sort {
     
-    open static func bubble(_ array: Array<Int>) -> [Int] {
+    public static func bubble(_ array: Array<Int>) -> [Int] {
         var a = array
         
         let count = a.count

@@ -11,7 +11,7 @@ import Foundation
 extension LeetCode {
     
     // LeetCode 1: https://leetcode.com/problems/two-sum/description/
-    open static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    public static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         if nums.count < 2 {
             return []
         }

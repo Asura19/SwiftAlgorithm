@@ -11,7 +11,7 @@ import Foundation
 extension LeetCode {
     
     // LeetCode 414 https://leetcode.com/problems/third-maximum-number/description/
-    open static func thirdMax(_ nums: [Int]) -> Int {
+    public static func thirdMax(_ nums: [Int]) -> Int {
         if nums.count == 1 {
             return nums.first!
         }

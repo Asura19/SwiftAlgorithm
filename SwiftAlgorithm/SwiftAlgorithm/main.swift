@@ -29,4 +29,5 @@ print(LeetCode.lengthOfLongestSubstring("assedfeeedfsdjfklm"))
 
 print(LeetCode.reverse(8223372036854775889))
 
-
+var arr = [1, 1, 2]
+print(LeetCode.removeDuplicates(&arr))

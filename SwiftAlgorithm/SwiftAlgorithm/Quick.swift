@@ -10,7 +10,7 @@ import Foundation
 
 extension Sort {
     
-    open static func quick(_ array: [Int], _ left: Int, _ right: Int) -> [Int] {
+    public static func quick(_ array: [Int], _ left: Int, _ right: Int) -> [Int] {
         var a = array
         
         if a.count <= 1 {

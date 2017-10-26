@@ -11,7 +11,7 @@ import Foundation
 extension LeetCode {
     
     // LeetCode 007: https://leetcode.com/problems/reverse-integer/description/
-    open static func reverse(_ x: Int) -> Int {
+    public static func reverse(_ x: Int) -> Int {
         
         var isNegative = false
         var num: UInt = 0;

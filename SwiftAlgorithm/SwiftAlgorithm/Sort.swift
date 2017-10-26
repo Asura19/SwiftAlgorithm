@@ -8,6 +8,6 @@
 
 import Cocoa
 
-open class Sort: NSObject {
+public class Sort {
        
 }

@@ -8,9 +8,9 @@
 
 import Cocoa
 
-open class Others: NSObject {
+public class Others: NSObject {
     
-    open static func printPyramid(_ m: Int) {
+    public static func printPyramid(_ m: Int) {
         var n = m
         if n > 9 {
             n = 10

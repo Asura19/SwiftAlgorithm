@@ -8,7 +8,7 @@
 
 import Cocoa
 
-open class ListNode: NSObject {
+public class ListNode {
     var value: Int
     var next: ListNode?
     

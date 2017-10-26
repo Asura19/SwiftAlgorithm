@@ -8,6 +8,6 @@
 
 import Cocoa
 
-open class LeetCode: NSObject {
+public class LeetCode {
     
 }
