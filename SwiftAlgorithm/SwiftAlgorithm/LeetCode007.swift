@@ -25,16 +25,17 @@ extension LeetCode {
             num = num * 10 + ux % 10;
             ux = ux / 10;
         }
+        
         if num > Int.max {
             num = 0
         }
+        
         if isNegative {
             return -Int(num)
         }
         else {
             return Int(num)
         }
-        
     }
 }
 

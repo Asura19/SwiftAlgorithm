@@ -16,6 +16,9 @@ public class ListNode {
         self.value = value
         self.next = nil
     }
+}
+
+public extension ListNode {
     
     static func getList(_ nums: [Int]) -> ListNode? {
         var list : ListNode?
@@ -35,9 +38,9 @@ public class ListNode {
         return list
     }
     
-    static func print(_ node: ListNode?) -> [Int] {
-        var n = node
-        var array:[Int] = []
+    var intArray: [Int] {
+        var n: ListNode? = self
+        var array = [Int]()
         
         while n != nil {
             array.append(n!.value)
