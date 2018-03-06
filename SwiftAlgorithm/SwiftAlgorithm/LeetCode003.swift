@@ -12,7 +12,11 @@ extension LeetCode {
     
     // LeetCode 3 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
     public static func lengthOfLongestSubstring(_ s: String) -> Int {
-        let charArray = Array(s.characters)
+        var charArray = [Character]()
+        for c in s {
+            charArray.append(c)
+        }
+//        let charArray = Array(s.characters)
         let length = charArray.count
         if length <= 1 {
             return length
