@@ -39,7 +39,7 @@ extension Sort {
         }
         
         a[i] = pivot
-        //        print(a)
+//                print(a)
         a = quick(a, left, i - 1)
         a = quick(a, i + 1, right)
         return a

@@ -17,7 +17,6 @@ extension LeetCode {
         let headNode: ListNode? = ListNode(0)
         var current: ListNode = headNode!
         var sum: Int = 0
-        var needCarry: Bool = false
         
         while temp1 != nil || temp2 != nil {
             sum /= 10
@@ -30,15 +29,9 @@ extension LeetCode {
                 temp2 = n.next
             }
             current.next = ListNode(sum % 10)
-            if needCarry {
-                current.next?.value += 1
-                needCarry = false
-            }
+
             if let n = current.next {
                 current = n
-                if sum - 10 >= 0 {
-                    needCarry = true
-                }
             }
         }
         if sum / 10 == 1 {

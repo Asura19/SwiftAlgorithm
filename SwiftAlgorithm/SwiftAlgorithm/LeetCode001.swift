@@ -17,11 +17,11 @@ extension LeetCode {
         }
         var result = [Int]()
         
-        for i in 0..<nums.count {
+        for i in 0..<nums.count-1 {
             
             for j in (i + 1)..<nums.count {
                 if nums[i] + nums[j] == target {
-                    result = [i, j]
+                    result = [i, j] // We will find the last answer if not only one solution.
                 }
             }
         }

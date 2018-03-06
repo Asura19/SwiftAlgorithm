@@ -22,7 +22,7 @@ print("twoSum result = " + LeetCode.twoSum(array, 8).description)
 
 print(LeetCode.thirdMax(array))
 
-print(LeetCode.addTwoNumbers(ListNode.getList([2, 4, 3]),
+print(LeetCode.addTwoNumbers(ListNode.getList([5, 4, 3]),
                              ListNode.getList([8, 2, 9]))!.intArray)
 
 print(LeetCode.lengthOfLongestSubstring("assedfeeedfsdjfklm"))
