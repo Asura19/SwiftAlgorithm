@@ -48,4 +48,20 @@ public extension ListNode {
         }
         return array
     }
+    
+    var description: String {
+        var n: ListNode? = self
+        var des = String(self.value)
+        
+        while n != nil {
+            n = n!.next
+            if n != nil {
+                des.append("->\(n!.value)")
+            }
+            else {
+                des.append("->nil")
+            }
+        }
+        return des
+    }
 }
