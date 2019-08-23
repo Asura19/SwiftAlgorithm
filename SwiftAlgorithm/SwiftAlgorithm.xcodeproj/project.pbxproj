@@ -27,6 +27,7 @@
 		D0C0D1571F4455D4005DBDA4 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D1561F4455D4005DBDA4 /* ListNode.swift */; };
 		D0C0D1591F44560E005DBDA4 /* LC007.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0D1581F44560E005DBDA4 /* LC007.swift */; };
 		D0C9D34B1FA1C78A0044F524 /* LC026.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9D34A1FA1C78A0044F524 /* LC026.swift */; };
+		D0EB01A523101A3700081DB3 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB01A423101A3700081DB3 /* Queue.swift */; };
 		D0EF7E67229CF38C00231298 /* LC876.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF7E66229CF38C00231298 /* LC876.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		D0C0D1561F4455D4005DBDA4 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		D0C0D1581F44560E005DBDA4 /* LC007.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC007.swift; sourceTree = "<group>"; };
 		D0C9D34A1FA1C78A0044F524 /* LC026.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC026.swift; sourceTree = "<group>"; };
+		D0EB01A423101A3700081DB3 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		D0EF7E66229CF38C00231298 /* LC876.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LC876.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				D0C0D1561F4455D4005DBDA4 /* ListNode.swift */,
 				D0910403230BEFBF00F7D1C1 /* LinkedList.swift */,
 				D010293222E2FD11003DD7D1 /* Stack.swift */,
+				D0EB01A423101A3700081DB3 /* Queue.swift */,
 				D0C0D14D1F44548A005DBDA4 /* LeetCode */,
 				D0C0D14B1F445456005DBDA4 /* Other */,
 				D07088931F445335009FB8FB /* Sort */,
@@ -208,6 +211,7 @@
 				D010293522E2FF46003DD7D1 /* LC020.swift in Sources */,
 				D0EF7E67229CF38C00231298 /* LC876.swift in Sources */,
 				D057AA32229BB55C00070756 /* LC083.swift in Sources */,
+				D0EB01A523101A3700081DB3 /* Queue.swift in Sources */,
 				D08920091F413AD5006BE533 /* main.swift in Sources */,
 				D0C0D14A1F44542E005DBDA4 /* Quick.swift in Sources */,
 				D07088951F44535C009FB8FB /* Bubble.swift in Sources */,

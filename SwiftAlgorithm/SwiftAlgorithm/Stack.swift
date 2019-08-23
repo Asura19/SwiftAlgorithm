@@ -32,7 +32,7 @@ public struct Stack<E> {
         return array.last
     }
     
-    public mutating func clear() {
+    public mutating func removeAll() {
         array.removeAll()
     }
 }

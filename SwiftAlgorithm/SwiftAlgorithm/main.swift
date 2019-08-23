@@ -65,12 +65,18 @@ var resultArray: [Int]
 //print(list.firstIndex(of: 2))
 //print(list.count)
 
-var list = LinkedList(array: [1, 2])
-list = LinkedList(arrayLiteral: 1, 2, 3, 4, 5, 6, 7)
+//var list = LinkedList(array: [1, 2])
+//list = LinkedList(arrayLiteral: 1, 2, 3, 4, 5, 6, 7)
 //list.removeAll { $0 % 2 == 0 }
-//list.removeAll()
+//for i in list {
+//    print(i)
+//}
+//print(list)
 
-for i in list {
-    print(i)
-}
-print(list)
+var queue = Queue<Int>()
+queue.enQueue(2)
+queue.enQueue(3)
+queue.enQueue(3)
+
+queue.deQueue()
+print(queue)
