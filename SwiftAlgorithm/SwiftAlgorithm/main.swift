@@ -72,11 +72,38 @@ var resultArray: [Int]
 //    print(i)
 //}
 //print(list)
+//
+//var queue = Queue<Int>()
+//queue.enQueue(2)
+//queue.enQueue(3)
+//queue.enQueue(3)
+//
+//queue.deQueue()
+//print(queue)
 
-var queue = Queue<Int>()
-queue.enQueue(2)
-queue.enQueue(3)
-queue.enQueue(3)
+class Person {
+    var name: String
+    init(_ name: String) {
+        self.name = name
+    }
+    deinit {
+        print("\(name)", "deinit")
+    }
+}
 
-queue.deQueue()
-print(queue)
+let arr = ArrayList<Int>()
+for i in 0..<120 {
+    arr.append(i)
+    print(arr)
+}
+
+for _ in 0..<115 {
+    arr.removeLast()
+    print(arr)
+}
+
+print(arr)
+
+
+
+//ptr.deallocate()

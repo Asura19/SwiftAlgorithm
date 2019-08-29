@@ -31,8 +31,7 @@ public struct Queue<E> {
         array[head] = nil
         head += 1
         
-        let percentage = Double(head) / Double(array.count)
-        if array.count > 50 && percentage > 0.25 {
+        if array.count > 50 && (Double(head) / Double(array.count) > 0.25) {
             array.removeFirst(head)
             head = 0
         }

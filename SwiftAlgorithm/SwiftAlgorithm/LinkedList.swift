@@ -174,7 +174,7 @@ extension LinkedList where E: Equatable {
     
     public func lastIndex(of element: E) -> Int? {
         if var node = tail {
-            for index in stride(from: count - 1, through: 0, by: -1) {
+           for index in stride(from: count - 1, through: 0, by: -1) { 
                 if element == node.value {
                     return index
                 }
