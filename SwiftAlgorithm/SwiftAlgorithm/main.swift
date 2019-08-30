@@ -81,16 +81,6 @@ var resultArray: [Int]
 //queue.deQueue()
 //print(queue)
 
-class Person {
-    var name: String
-    init(_ name: String) {
-        self.name = name
-    }
-    deinit {
-        print("\(name)", "deinit")
-    }
-}
-
 let arr = ArrayList<Int>()
 for i in 0..<120 {
     arr.append(i)
@@ -105,5 +95,16 @@ for _ in 0..<115 {
 print(arr)
 
 
-
+//var ptr = UnsafeMutablePointer<String>.allocate(capacity: 3)
+//ptr.initialize(to: "0000000000000000000000")
+//(ptr + 1).initialize(to: "1111111111111111111")
+//(ptr + 2).initialize(to: "22222222222222222222")
+//print(ptr[0])
+//print(ptr[1])
+//print(ptr[2])
+//ptr.deinitialize(count: 3)
+//ptr.deallocate()
+//print(ptr[0])
+//print(ptr[1])
+//print(ptr[2])
 //ptr.deallocate()

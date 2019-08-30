@@ -156,7 +156,6 @@ public final class LinkedList<E> {
 }
 
 
-
 extension LinkedList where E: Equatable {
     
     public func firstIndex(of element: E) -> Int? {

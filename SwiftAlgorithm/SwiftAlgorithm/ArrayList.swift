@@ -98,26 +98,27 @@ public class ArrayList<E> {
         if self.currentCapacity > capacity {
             return
         }
-        
         let newCapacity = self.currentCapacity + (self.currentCapacity >> 1)
-        let newElements = UnsafeMutablePointer<E>.allocate(capacity: newCapacity)
-        for i in 0..<count {
-            (newElements + i).initialize(to: elements[i])
-        }
-        elements = newElements
-        self.currentCapacity = newCapacity
+        copyArrayListToNewSpace(capacity: newCapacity)
     }
     
     private func decreaseCapacityIfNeeded() {
         if self.currentCapacity > 50 && (Double(count) / Double(self.currentCapacity) < 0.25) {
             let newCapacity = max(Constant.DefaultCapacity, self.currentCapacity >> 1)
-            let newElements = UnsafeMutablePointer<E>.allocate(capacity: newCapacity)
-            for i in 0..<count {
-                (newElements + i).initialize(to: elements[i])
-            }
-            elements = newElements
-            self.currentCapacity = newCapacity
+            copyArrayListToNewSpace(capacity: newCapacity)
         }
+    }
+    
+    private func copyArrayListToNewSpace(capacity: Int) {
+        let newElements = UnsafeMutablePointer<E>.allocate(capacity: capacity)
+        for i in 0..<count {
+            (newElements + i).initialize(to: elements[i])
+        }
+        let oldElements = elements
+        elements = newElements
+        oldElements.deinitialize(count: self.currentCapacity)
+        oldElements.deallocate()
+        self.currentCapacity = capacity
     }
 }
 
