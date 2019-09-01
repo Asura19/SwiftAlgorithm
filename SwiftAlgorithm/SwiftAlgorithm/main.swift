@@ -81,30 +81,32 @@ var resultArray: [Int]
 //queue.deQueue()
 //print(queue)
 
-let arr = ArrayList<Int>()
-for i in 0..<120 {
-    arr.append(i)
-    print(arr)
+//let arr = ArrayList<Int>()
+//for i in 0..<120 {
+//    arr.append(i)
+//    print(arr)
+//}
+//
+//for _ in 0..<115 {
+//    arr.removeLast()
+//    print(arr)
+//}
+//
+//print(arr)
+
+
+let one = BinaryTree<Int>.node(.empty, 1, .empty)
+let two = BinaryTree<Int>.node(.empty, 2, .empty)
+let three = BinaryTree<Int>.node(.empty, 3, .empty)
+let four = BinaryTree<Int>.node(.empty, 4, .empty)
+
+let left = BinaryTree<Int>.node(one, 8, two)
+let right = BinaryTree<Int>.node(three, 9, four)
+let root = BinaryTree<Int>.node(left, 10, right)
+
+
+root.traverseLevelOrder { (value) in
+    print(value)
 }
+print("---------")
 
-for _ in 0..<115 {
-    arr.removeLast()
-    print(arr)
-}
-
-print(arr)
-
-
-//var ptr = UnsafeMutablePointer<String>.allocate(capacity: 3)
-//ptr.initialize(to: "0000000000000000000000")
-//(ptr + 1).initialize(to: "1111111111111111111")
-//(ptr + 2).initialize(to: "22222222222222222222")
-//print(ptr[0])
-//print(ptr[1])
-//print(ptr[2])
-//ptr.deinitialize(count: 3)
-//ptr.deallocate()
-//print(ptr[0])
-//print(ptr[1])
-//print(ptr[2])
-//ptr.deallocate()
