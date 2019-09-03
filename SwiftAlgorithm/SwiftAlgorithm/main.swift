@@ -95,18 +95,27 @@ var resultArray: [Int]
 //print(arr)
 
 
-let one = BinaryTree<Int>.node(.empty, 1, .empty)
-let two = BinaryTree<Int>.node(.empty, 2, .empty)
-let three = BinaryTree<Int>.node(.empty, 3, .empty)
-let four = BinaryTree<Int>.node(.empty, 4, .empty)
+//let one = BinaryTree<Int>.node(.empty, 1, .empty)
+//let two = BinaryTree<Int>.node(.empty, 2, .empty)
+//let three = BinaryTree<Int>.node(.empty, 3, .empty)
+//let four = BinaryTree<Int>.node(.empty, 4, .empty)
+//
+//let left = BinaryTree<Int>.node(one, 8, two)
+//let right = BinaryTree<Int>.node(three, 9, four)
+//let root = BinaryTree<Int>.node(left, 10, right)
+//
+//
+//root.traverseLevelOrder { (value) in
+//    print(value)
+//}
+//print("---------")
 
-let left = BinaryTree<Int>.node(one, 8, two)
-let right = BinaryTree<Int>.node(three, 9, four)
-let root = BinaryTree<Int>.node(left, 10, right)
-
-
-root.traverseLevelOrder { (value) in
-    print(value)
-}
-print("---------")
+//func sum(n: UInt) -> UInt {
+//    if n == 0 {
+//        return 0
+//    }
+//    return n + sum(n: n - 1)
+//}
+//
+//print(sum(n: 1000000))
 
