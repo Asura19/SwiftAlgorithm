@@ -11,7 +11,7 @@ import Foundation
 public class BinarySearchTree<E: Comparable> {
     
     fileprivate(set) public var value: E
-    fileprivate(set) public var parent: BinarySearchTree?
+    fileprivate(set) public weak var parent: BinarySearchTree?
     fileprivate(set) public var left: BinarySearchTree?
     fileprivate(set) public var right: BinarySearchTree?
     
@@ -238,16 +238,15 @@ extension BinarySearchTree {
 }
 
 extension BinarySearchTree: CustomStringConvertible {
-  public var description: String {
-    var s = ""
-    if let left = left {
-      s += "(\(left.description)) <- "
+    public var description: String {
+        var s = ""
+        if let left = left {
+            s += "(\(left.description)) <- "
+        }
+        s += "\(value)"
+        if let right = right {
+            s += " -> (\(right.description))"
+        }
+        return s
     }
-    s += "\(value)"
-    if let right = right {
-      s += " -> (\(right.description))"
-    }
-    return s
-  }
-
 }

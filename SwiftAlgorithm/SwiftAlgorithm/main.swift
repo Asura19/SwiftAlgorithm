@@ -119,3 +119,21 @@ var resultArray: [Int]
 //
 //print(sum(n: 1000000))
 
+let tree = AVLTree<Int, String>()
+for i in 0...10 {
+  tree.insert(key: i, value: "\(i)")
+}
+
+tree.delete(key: 3)
+tree.delete(key: 1)
+tree.delete(key: 0)
+
+tree.traverseLevelOrder(node: tree.root) { (node) in
+    print(node.value!)
+}
+
+print(tree)
+
+//tree.traverseInOrder(node: tree.root?.right) { (node) in
+//    print(node.payload!)
+//}
