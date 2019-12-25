@@ -10,7 +10,8 @@ import Foundation
 
 var array = [6, 5, 1, 3, 8, 4, 7, 9, 2, 0, 11, 34, 7]
 
-var resultArray: [Int]
+//print(array.quickSorted())
+//print(Sort.quick(array, 0, array.count - 1))
 
 //print("bubble sort result = " + Sort.bubble(array).description)
 //
@@ -119,21 +120,51 @@ var resultArray: [Int]
 //
 //print(sum(n: 1000000))
 
-let tree = AVLTree<Int, String>()
-for i in 0...10 {
-  tree.insert(key: i, value: "\(i)")
-}
-
-tree.delete(key: 3)
-tree.delete(key: 1)
-tree.delete(key: 0)
-
-tree.traverseLevelOrder(node: tree.root) { (node) in
-    print(node.value!)
-}
-
-print(tree)
+//let tree = AVLTree<Int, String>()
+//for i in 0...10 {
+//  tree.insert(key: i, value: "\(i)")
+//}
+//
+//tree.delete(key: 3)
+//tree.delete(key: 1)
+//tree.delete(key: 0)
+//
+//tree.traverseLevelOrder(node: tree.root) { (node) in
+//    print(node.value!)
+//}
+//
+//print(tree)
 
 //tree.traverseInOrder(node: tree.root?.right) { (node) in
 //    print(node.payload!)
 //}
+
+
+var list = ListNode.getList([0, 1, 2, 3, 4, 5, 6])
+print(list!.intArray)
+
+//func reverse(_ head: ListNode) -> ListNode {
+//    guard let next = head.next else { return head }
+//
+//    let newHead = reverse(next)
+//    next.next = head
+//    head.next = nil
+//    return newHead
+//}
+//print(reverse(list!).intArray)
+//
+//func reverseList(_ head: ListNode) -> ListNode {
+//    var newHead: ListNode?
+//    var head: ListNode? = head
+//
+//    while head != nil {
+//        let temp = head?.next
+//        head!.next = newHead
+//        newHead = head
+//        head = temp
+//    }
+//    return newHead!
+//}
+
+//print(reverseList(list!).intArray)
+
