@@ -168,3 +168,27 @@ print(list!.intArray)
 
 //print(reverseList(list!).intArray)
 
+
+
+
+let a = [
+    [1, 2, 3, 21, 23],
+    [4, 5, 6, 33, 12],
+    [56, 8, 9, 11, 14],
+    [77, 67, 45, 11, 17]
+]
+
+//let a = [
+//    [1],
+//    [4],
+//    [7],
+//]
+
+//let a = [
+//    [1, 2, 3],
+//]
+
+//let a = [
+//    [1],
+//]
+LeetCode.printMatrixBySpiral(a)
